@@ -1,0 +1,134 @@
+html {
+    background-color: rgb(253, 71, 0);
+    color: black;
+}
+
+@font-face {
+    font-family: Noto Sans;
+    src: url('../fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Noto Sans Bold;
+    src: url('../fonts/NotoSans-Bold.ttf')
+}
+
+body {
+    min-height: 100vh;
+    max-width: 900px;
+    /*background-color: red; Just to see the where body ends */
+    margin: 0 auto;
+}
+
+#pokerfacowaty-com-box {
+    text-align: center;
+}
+
+#link-main {
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a.pokerfacowaty:link, a.pokerfacowaty:visited {
+    color: black;
+    text-decoration:none;
+    font-size:20px;
+}
+
+a.pokerfacowaty:hover {
+    color: blue;
+}
+
+#profile-pic {
+    height: 400px;
+    display: inline;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#text-pp {
+    height: 425px;
+    background-color:rgb(253, 71, 0);
+    font-family: Noto Sans;
+    position: relative;
+}
+
+a.links-pp:link, a.links-pp:visited {
+    color: black;
+    text-decoration:none;
+    font-family: Noto Sans Bold;
+}
+
+a.links-pp:hover {
+    color: blue;
+}
+
+#text-profile-pic {
+    position:absolute;
+    bottom: 0px;
+    left: 15px;
+    text-align:center;
+    width: 282px;
+}
+
+.buttons-box {
+    word-spacing: 20px;
+    text-align: center;
+}
+
+.buttons {
+    font-family: Noto Sans Bold;
+    font-size: 20px;
+}
+
+a.buttons:link, a.buttons:visited {
+    color: black;
+    text-decoration:none;
+    font-family: Noto Sans Bold;
+}
+
+a.buttons:hover {
+    color: blue;
+}
+
+#cs {
+    word-spacing: normal;
+}
+
+#pokers-diary {
+    word-spacing: normal;
+}
+
+.sm-buttons-box {
+    word-spacing: 15px;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.sm-buttons {
+    font-family: Noto Sans Bold;
+    font-size: 15px;
+}
+
+#multi-word-button {
+    word-spacing: normal;
+}
+
+a.sm-buttons:link, a.sm-buttons:visited {
+    color: black;
+    text-decoration:none;
+    font-family: Noto Sans Bold;
+}
+
+a.sm-buttons:hover {
+    color: blue;
+}
+
+h1 {
+    font-family: Noto Sans Bold;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+html {
+    background-color: rgb(253, 71, 0);
+    color: black;
+}
+
+@font-face {
+    font-family: Noto Sans;
+    src: url('../fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Noto Sans Bold;
+    src: url('../fonts/NotoSans-Bold.ttf')
+}
+
+body {
+    min-height: 100vh;
+    max-width: 900px;
+    /* background-color: red; Just to see the where body ends */
+    margin: 0 auto;
+}
+
+#pokerfacowaty-com-box {
+    text-align: center;
+}
+
+#link-main {
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a.pokerfacowaty:link, a.pokerfacowaty:visited {
+    color: black;
+    text-decoration:none;
+    font-size:20px;
+}
+
+a.pokerfacowaty:hover {
+    color: blue;
+}
+
+h1 {
+    font-family: Noto Sans Bold;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cheat Sheets</title>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css/cs.css">
+</head>
+<body>
+<div id="pokerfacowaty-com-box">
+    <a class="pokerfacowaty" href="index.html" id="link-main">PokerFacowaty.com</a>
+</div>
+<h1>Cheat Sheet</h1>
+<div class="collapsible-box-left">
+    <details>
+        <summary class="header">shell</summary>
+            <p class="command-line">
+                <span class="command">Ctrl + A</span>
+                <span class="same-line-comment">Line beginning</span>
+            </p>
+            <!--<p class="small-comment">Invisible comment</p>-->
+            <p class="command-line">
+                <span class="command">Ctrl + E</span>
+                <span class="same-line-comment">EOTL</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + L</span>
+                <span class="same-line-comment">Clear the screen</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + U</span>
+                <span class="same-line-comment">Clear the line before cursor</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + K</span>
+                <span class="same-line-comment">Clear the line after cursor</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + R</span>
+                <span class="same-line-comment">Search last commands</span>
+            <p class="command-line">
+                <span class="command">Alt + F</span>
+                <span class="same-line-comment">Cursor one word forward</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Alt + B</span>
+                <span class="same-line-comment">Cursor one word backward</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Tab</span>
+                <span class="same-line-comment">Autocomplete</span>
+            </p>
+            <p class="command-line">
+                <span class="command">alias {short}="{full}"</span>
+                <span class="same-line-comment">Create an alias</span>
+            </p>
+            <p class="small-comment">Save to .bashrc / .zshrc to make permanent</p>
+            <p class="command-line">
+                <span class="command">rm -r {directory}</span>
+                <span class="same-line-comment">Remove a dir with all subdirs<span>
+            </p>
+            <p class="command-line">
+                <span class="command">mv {file/dir1} {file/dir2} {dir}</span>
+                <span class="same-line-comment">Move<span>
+            </p>
+            <p class="small-comment">Also used to rename files and dirs</p>
+    </details>
+    <details>
+        <summary class="header">irssi</summary>
+            <p class="command-line">
+                <span class="command">Alt + N</span>
+                <span class="same-line-comment">Switch window to N</span>
+            </p>
+            <p class="small-comment">Works until Alt + O</p>
+            <p class="command-line">
+                <span class="command">PgUp/PgDwn</span>
+                <span class="same-line-comment">Scroll</span>
+            </p>
+            <p class="command-line">
+                <span class="command">/server add -ssl -auto -network {network} {link} {port}</span>
+                <span class="same-line-comment">Auto connect</span>
+            </p>
+            <p class="command-line">
+                <span class="command">/network add -autosendcmd "/msg nickserv identify {password} ;wait 2000" {network}</span>
+                <span class="same-line-comment">Auto identify</span>
+            </p>
+            <p class="command-line">
+                <span class="command">/channel add -auto {channel} {network}</span>
+                <span class="same-line-comment">Auto join channels</span>
+            </p>
+            <p class="command-line">
+                <span class="command">/save</span>
+                <span class="same-line-comment">Save all settings</span>
+            </p>
+    </details>
+    <details>
+        <summary class="header">grep</summary>
+            <p class="command-line">
+                <span class="command">grep {options} {string} {path}</span>
+                <span class="same-line-comment">Searching for the string in the file</span>
+            </p>
+            <p class="command-line">
+                <span class="command">-i</span>
+                <span class="same-line-comment">Ignore case</span>
+            </p>
+            <p class="command-line">
+                <span class="command">-r</span>
+                <span class="same-line-comment">Dir and all subdirs</span>
+            </p>
+            <p class="command-line">
+                <span class="command">|</span>
+                <span class="same-line-comment">OR operator</span>
+            </p>
+    </details>
+    <details>
+        <summary class="header">ffmpeg</summary>
+            <p class="command-line">
+                <span class="command">ffmpeg -ss {time} -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 18 -c:a aac -b 320k {output}</span>
+                <span class="same-line-comment">Hi8 for DaVinci</span>
+                <p class="small-comment">H.264 at 1920x1440 capped at 10 Mb/s</p>
+            </p>
+            <p class="command-line">
+                <span class="command">ffmpeg -ss {time} -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 22 -s 1920x1440 -c:a aac -b 320k {output}</span>
+                <span class="same-line-comment">Hi8 skipping DaVinci</span>
+            </p>
+            <p class="command-line">
+                <span class="command">-map {input number}:{v/a/s}:{stream number}</span>
+                <span class="same-line-comment">Mapping</span>
+            </p>
+    </details>
+    <details>
+        <summary class="header">Python</summary>
+            <p class="command-line">
+                <span class="command"></span>
+                <span class="same-line-comment"></span>
+            </p>
+    </details>
+    <details>
+        <summary class="header">MySQL</summary>
+            <p class="command-line">
+                <span class="command"></span>
+                <span class="same-line-comment"></span>
+            </p>
+    </details>
+</div>
+<div class="collapsible-box-right">
+    <details>
+        <summary class="header">tmux</summary>
+            <p class="command-line">
+                <span class="command">tmux new -s {name}</span>
+                <span class="same-line-comment">New session</span>
+            </p>
+            <p class="command-line">
+                <span class="command">tmux kill-ses -t {name}</span>
+                <span class="same-line-comment">Kill session</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + B $</span>
+                <span class="same-line-comment">Rename current session</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + B D</span>
+                <span class="same-line-comment">Detach</span>
+            </p>
+            </p>
+            <p class="command-line">
+                <span class="command">tmux ls</span>
+                <span class="same-line-comment">List sessions</span>
+            </p>
+            <p class="command-line">
+                <span class="command">tmux a</span>
+                <span class="same-line-comment">Attach to last session</span>
+            </p>
+            <p class="command-line">
+                <span class="command">tmux a -t {name}</span>
+                <span class="same-line-comment">Attach to {name}</span>
+            </p>             
+    </details>
+    <details>
+        <summary class="header">nano</summary>
+        <p id="small-comment-on-top">Set "Use Option as Meta key" on Mac</p>
+            <p class="command-line">
+                <span class="command">Ctrl + S</span>
+                <span class="same-line-comment">Save</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + O</span>
+                <span class="same-line-comment">Save as</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + X</span>
+                <span class="same-line-comment">Close</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Alt + A</span>
+                <span class="same-line-comment">Turn the mark on/off</span>
+            </p>
+            
+            <p class="small-comment">Prompts about saving as well</p>
+            <p class="command-line">
+                <span class="command">Alt + 6</span>
+                <span class="same-line-comment">Copy current line / mark</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + K</span>
+                <span class="same-line-comment">Cut current line / mark</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + U</span>
+                <span class="same-line-comment">Paste buffer content</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Alt + U</span>
+                <span class="same-line-comment">Undo</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Alt + E</span>
+                <span class="same-line-comment">Redo</span>
+            </p>
+    </details>
+    <details>
+        <summary class="header">cron</summary>
+            <p class="command-line">
+                <span class="command">crontab -l</span>
+                <span class="same-line-comment">Display the crontab file</span>
+            </p>
+            <p class="command-line">
+                <span class="command">crontab -e</span>
+                <span class="same-line-comment">Edit the crontab file</span>
+                <p class="small-comment">With vi, hell yeah</p>
+            </p>
+            <p class="command-line">
+                <span class="command">{m} {h} {dom} {mon} {dow} {command}</span>
+                <span class="same-line-comment">Syntax</span>
+                <p class="small-comment">For dow Sunday is 0</p>
+            </p>
+            <p class="command-line">
+                <span class="command">* * * * * * {command}</span>
+                <span class="same-line-comment">Every minute of every day</span>
+            </p>
+            <p class="command-line">
+                <span class="command">*/10 * * * * * {command}</span>
+                <span class="same-line-comment">Every 10 minutes of every day</span>
+            </p>
+            <p class="command-line">
+                <span class="command">@reboot @yearly @monthly @weekly @daily @hourly</span>
+                <span class="same-line-comment">Special strings</span>
+                <p class="small-comment">{special string} {command}</p>
+            </p>
+    </details>
+    <details>
+        <summary class="header">git</summary>
+            <p class="command-line">
+                <span class="command">git init</span>
+                <span class="same-line-comment">Initialize a directory</span>
+            </p>
+            <p class="command-line">
+                <span class="command">git clone {url}</span>
+                <span class="same-line-comment">Clone a repo</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Leaving git for when I learn git</span>
+                <span class="same-line-comment"></span>
+            </p>
+    </details>
+    <details>
+        <summary class="header">VSCode</summary>
+            <p class="command-line">
+                <span class="command">Ctrl/Cmd + Shift + L</span>
+                <span class="same-line-comment">Add cursor to all matching selections</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl/Cmd + K + W</span>
+                <span class="same-line-comment">Close all editor tabs</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl/Cmd + /</span>
+                <span class="same-line-comment">Single line comment</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Shift + Alt / Option + A</span>
+                <span class="same-line-comment">Multi line comment</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl + `</span>
+                <span class="same-line-comment">Open terminal</span>
+            </p>
+            <p class="command-line">
+                <span class="command">Ctrl/Cmd + \</span>
+                <span class="same-line-comment">Split editor view</span>
+            </p>
+    </details>
+    <details>
+        <summary class="header">Markdown</summary>
+            <table>
+                <tr>
+                    <td>Heading</td>
+                    <td># H1 <br>## H2 <br>### H3</td>
+                </tr>
+                <tr>
+                    <td>Bold</td>
+                    <td>**bold text**</td>
+                </tr>
+                <tr>
+                    <td>Italic</td>
+                    <td>*italicized text*</td>
+                </tr>
+                <tr>
+                    <td>Blockquote</td>
+                    <td>> blockquote</td>
+                </tr>
+                <tr>
+                    <td>Ordered List</td>
+                    <td>1. First item<br>
+                        2. Second item<br>
+                        3. Third item</td>
+                </tr>
+                <tr>
+                    <td>Unordered List</td>
+                    <td>- First item<br>
+                        - Second item<br>
+                        - Third item</td>
+                </tr>
+                <tr>
+                    <td>Code</td>
+                    <td>`code`</td>
+                </tr>
+                <tr>
+                    <td>Horizontal Rule</td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>Link</td>
+                    <td>[title](https://www.example.com)</td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td>![alt text](image.jpg)</td>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>| Syntax | Description |<br>
+                        | ----------- | ----------- |<br>
+                        | Header | Title |<br>
+                        | Paragraph | Text |</td>
+                </tr>
+                <tr>
+                    <td>Code Line</td>
+                    <td>```</td>
+                </tr>
+                <tr>
+                    <td>Fenced Code Block</td>
+                    <td>```<br>
+                        {<br>
+                          "firstName": "John",<br>
+                          "lastName": "Smith",<br>
+                          "age": 25<br>
+                        }<br>
+                        ```</td>
+                </tr>
+                <tr>
+                    <td>Strikethrough</td>
+                    <td>~~The world is flat.~~</td>
+                </tr>
+                <tr>
+                    <td>Task List</td>
+                    <td>- [x] Write the press release<br>
+                        - [ ] Update the website<br>
+                        - [ ] Contact the media</td>
+                </tr>
+            </table>
+    </details>
+</div>
+</body>
