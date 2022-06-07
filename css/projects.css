@@ -47,3 +47,65 @@ h1 {
     text-align: center;
     margin-top: 0px;
 }
+
+h2 {
+    font-family: Noto Sans Bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+.project-box {
+    height: 170px;
+    font-family: Noto Sans;
+    text-align: justify;
+}
+
+.project-img {
+    width: 300px;
+    display: inline;
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px; /* This is to have the text more in line with the top of the pic */
+}
+
+.project-name {
+    position: relative;
+    font-family: Noto Sans Bold;
+    font-size: 25px;
+}
+
+a.project-main-link:link, a.project-main-link:visited {
+    color: black;
+    text-decoration:none;
+}
+
+a.project-main-link:hover {
+    color: blue;
+}
+
+.project-extra-links-box {
+    word-spacing: 10px;
+    height: 27px; /* 150% of font size */
+}
+
+a.project-extra-links:link, a.project-extra-links:visited {
+    color: black;
+    text-decoration:none;
+    font-family: Noto Sans Bold;
+    font-size: 18px;
+}
+
+a.project-extra-links:hover {
+    color: blue;
+}
+
+a.links-inside-text:link, a.links-inside-text:visited {
+    color: black;
+    text-decoration:none;
+    font-family: Noto Sans Bold;
+}
+
+a.links-inside-text:hover {
+    color: blue;
+}
