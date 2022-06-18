@@ -103,9 +103,12 @@ h1 {
 }
 
 table, td {
-    border: 2px solid black;
+    border: 2px solid white;
     border-collapse: collapse;
+    background-color: black;
     font-family: Noto Sans;
+    color: white;
+    padding-left: 5px;
 }
 
 table {
