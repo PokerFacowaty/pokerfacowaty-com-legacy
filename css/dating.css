@@ -109,3 +109,15 @@ a:hover#twice {
     float: left;
     margin: 5px 15px 15px 15px;
 }
+
+#dates-header {
+    font-family: Noto Sans;
+}
+
+.dates {
+    font-family: Noto Sans;
+    text-align: justify;
+    margin-top: -25px;
+    margin-bottom: -15px;
+    display: flex;
+}
