@@ -87,6 +87,12 @@ a:hover#powerpoint {
     text-align: justify;
 }
 
+.highlights {
+    display: inline;
+    color: blue;
+    font-family: Noto Sans Bold;
+}
+
 #pic2 {
     width: 300px;
 }
@@ -173,7 +179,7 @@ a:hover#punhub {
 }
 
 #dates-header {
-    font-family: Noto Sans Bold;
+    font-family: Noto Sans;
     margin-left: 15px;
 }
 
