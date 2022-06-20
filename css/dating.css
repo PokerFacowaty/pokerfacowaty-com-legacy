@@ -56,9 +56,18 @@ h1 {
 }
 
 #pic1 {
-    width:300px;
+    width:400px;
+}
+
+#pic1-figure {
     float: left;
-    margin: 5px 15px 5px 15px; /* trbl, unlike others t is 5 because 15 looks bad */
+    margin: 5px 15px 0px 15px;
+}
+
+figcaption {
+    font-family: Noto Sans;
+    font-size: 14px;
+    text-align: center;
 }
 
 a:link#powerpoint, a:visited#powerpoint {
@@ -80,6 +89,9 @@ a:hover#powerpoint {
 
 #pic2 {
     width: 300px;
+}
+
+#pic2-figure {
     float: right;
     margin: 5px 15px 5px 15px;
 }
@@ -106,12 +118,63 @@ a:hover#twice {
 
 #pic3 {
     width: 300px;
+}
+
+#pic3-figure {
     float: left;
     margin: 5px 15px 15px 15px;
 }
 
+#pic4 {
+    width: 300px;
+}
+
+#pic4-figure {
+    float: right;
+    margin: 5px 15px 5px 15px;
+}
+
+#pic5 {
+    width: 300px;
+}
+
+#pic5-figure {
+    float: left;
+    margin: 5px 15px 5px 15px;
+}
+
+#pic6 {
+    width: 300px;
+}
+
+#pic6-figure {
+    float: right;
+    margin: 5px 15px 15px 15px;
+}
+
+a:link#jaronski, a:visited#jaronski {
+    color: black;
+    text-decoration:none;
+    font-family: Noto Sans Bold;
+}
+
+a:hover#jaronski {
+    color: blue;
+}
+
+a:link#punhub, a:visited#punhub {
+    color: black;
+    text-decoration:none;
+    font-family: Noto Sans Bold;
+}
+
+a:hover#punhub {
+    color: blue;
+}
+
 #dates-header {
-    font-family: Noto Sans;
+    font-family: Noto Sans Bold;
+    margin-left: 15px;
 }
 
 .dates {
