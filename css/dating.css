@@ -155,7 +155,7 @@ a:hover#twice {
 
 #pic6-figure {
     float: right;
-    margin: 5px 15px 15px 15px;
+    margin: 5px 15px 0px 15px;
 }
 
 a:link#jaronski, a:visited#jaronski {
@@ -189,4 +189,13 @@ a:hover#punhub {
     margin-top: -25px;
     margin-bottom: -15px;
     display: flex;
+}
+
+#pic7 {
+    height: 400px;
+}
+
+#pic7-figure {
+    float: left;
+    margin: 5px 15px 15px 15px;
 }
