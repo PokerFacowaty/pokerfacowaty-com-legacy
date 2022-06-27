@@ -16,7 +16,6 @@ html {
 body {
     min-height: 100vh;
     max-width: 900px;
-    /*background-color: red; Just to see the where body ends */
     margin: 0 auto;
 }
 
@@ -31,20 +30,18 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a.pokerfacowaty:link, a.pokerfacowaty:visited {
+a.links:link, a.links:visited {
     color: black;
-    text-decoration:none;
-    font-size:20px;
+    text-decoration: none;
+    font-family: Noto Sans Bold;
 }
 
-a.pokerfacowaty:hover {
+a.links:hover {
     color: blue;
 }
 
 #profile-pic {
     height: 400px;
-    display: inline;
-    position: relative;
     float: left;
     margin-right: 15px;
     margin-left: 15px;
@@ -52,19 +49,8 @@ a.pokerfacowaty:hover {
 
 #text-pp {
     height: 425px;
-    background-color:rgb(253, 71, 0);
     font-family: Noto Sans;
     position: relative;
-}
-
-a.links-pp:link, a.links-pp:visited {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a.links-pp:hover {
-    color: blue;
 }
 
 #text-profile-pic {
@@ -78,28 +64,10 @@ a.links-pp:hover {
 .buttons-box {
     word-spacing: 20px;
     text-align: center;
-}
-
-.buttons {
-    font-family: Noto Sans Bold;
     font-size: 20px;
 }
 
-a.buttons:link, a.buttons:visited {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a.buttons:hover {
-    color: blue;
-}
-
-#cs {
-    word-spacing: normal;
-}
-
-#pokers-diary {
+#cs, #pokers-diary, #multi-word-button {
     word-spacing: normal;
 }
 
@@ -107,25 +75,7 @@ a.buttons:hover {
     word-spacing: 15px;
     text-align: center;
     margin-top: -15px;
-}
-
-.sm-buttons {
     font-family: Noto Sans Bold;
-    font-size: 15px;
-}
-
-#multi-word-button {
-    word-spacing: normal;
-}
-
-a.sm-buttons:link, a.sm-buttons:visited {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a.sm-buttons:hover {
-    color: blue;
 }
 
 h1 {
