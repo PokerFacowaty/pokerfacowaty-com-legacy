@@ -16,7 +16,6 @@ html {
 body {
     min-height: 100vh;
     max-width: 900px;
-    /* background-color: red; Just to see the where body ends */
     margin: 0 auto;
 }
 
@@ -31,13 +30,13 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a.pokerfacowaty:link, a.pokerfacowaty:visited {
+a.links:link, a.links:visited {
     color: black;
-    text-decoration:none;
-    font-size:20px;
+    text-decoration: none;
+    font-family: Noto Sans Bold;
 }
 
-a.pokerfacowaty:hover {
+a.links:hover {
     color: blue;
 }
 
@@ -80,16 +79,6 @@ h1 {
     margin-bottom: 3px;
     font-family: Noto Sans;
     font-size:15px;
-}
-
-a.list-link:link, a.list-link:visited {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a.list-link:hover {
-    color: blue;
 }
 
 .sublist {

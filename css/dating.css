@@ -16,7 +16,6 @@ html {
 body {
     min-height: 100vh;
     max-width: 900px;
-    /* background-color: red; Just to see the where body ends */
     margin: 0 auto;
 }
 
@@ -31,16 +30,6 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a.pokerfacowaty:link, a.pokerfacowaty:visited {
-    color: black;
-    text-decoration:none;
-    font-size:20px;
-}
-
-a.pokerfacowaty:hover {
-    color: blue;
-}
-
 h1 {
     font-family: Noto Sans Bold;
     font-size: 40px;
@@ -53,6 +42,16 @@ h1 {
     font-size: 15px;
     text-align: center;
     margin-top: -25px;
+}
+
+a.links:link, a.links:visited {
+    color: black;
+    text-decoration: none;
+    font-family: Noto Sans Bold;
+}
+
+a.links:hover {
+    color: blue;
 }
 
 #pic1 {
@@ -70,16 +69,6 @@ figcaption {
     text-align: center;
 }
 
-a:link#powerpoint, a:visited#powerpoint {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a:hover#powerpoint {
-    color: blue;
-}
-
 .description-paras {
     font-family: Noto Sans;
     margin-left: 15px;
@@ -88,7 +77,6 @@ a:hover#powerpoint {
 }
 
 .highlights {
-    display: inline;
     color: blue;
     font-family: Noto Sans Bold;
 }
@@ -100,26 +88,6 @@ a:hover#powerpoint {
 #pic2-figure {
     float: right;
     margin: 5px 15px 5px 15px;
-}
-
-a:link#sirens, a:visited#sirens {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a:hover#sirens {
-    color: blue;
-}
-
-a:link#twice, a:visited#twice {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a:hover#twice {
-    color: blue;
 }
 
 #pic3 {
@@ -156,26 +124,6 @@ a:hover#twice {
 #pic6-figure {
     float: right;
     margin: 5px 15px 0px 15px;
-}
-
-a:link#jaronski, a:visited#jaronski {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a:hover#jaronski {
-    color: blue;
-}
-
-a:link#punhub, a:visited#punhub {
-    color: black;
-    text-decoration:none;
-    font-family: Noto Sans Bold;
-}
-
-a:hover#punhub {
-    color: blue;
 }
 
 #dates-header {
