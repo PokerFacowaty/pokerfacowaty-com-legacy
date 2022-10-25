@@ -273,33 +273,33 @@
             <span class="icon">➤</span>
             cron
         </summary>
-            <p class="command-line">
-                <span class="command">crontab -l</span>
-                <span class="same-line-comment">Display the crontab file</span>
-            </p>
-            <p class="command-line">
-                <span class="command">crontab -e</span>
-                <span class="same-line-comment">Edit the crontab file</span>
-                <p class="small-comment">With vi, hell yeah</p>
-            </p>
-            <p class="command-line">
-                <span class="command">{m} {h} {dom} {mon} {dow} {command}</span>
-                <span class="same-line-comment">Syntax</span>
-                <p class="small-comment">For dow Sunday is 0</p>
-            </p>
-            <p class="command-line">
-                <span class="command">* * * * * * {command}</span>
-                <span class="same-line-comment">Every minute of every day</span>
-            </p>
-            <p class="command-line">
-                <span class="command">*/10 * * * * * {command}</span>
-                <span class="same-line-comment">Every 10 minutes of every day</span>
-            </p>
-            <p class="command-line">
-                <span class="command">@reboot @yearly @monthly @weekly @daily @hourly</span>
-                <span class="same-line-comment">Special strings</span>
-                <p class="small-comment">{special string} {command}</p>
-            </p>
+            <div>
+                <span class="inline-code-comment">Display the crontab file</span>
+                <code class="inline-code">crontab -l</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Edit the crontab file</span>
+                <p class="inline-code-small-comment">With vi, hell yeah</p>
+                <code class="inline-code">crontab -e</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Syntax</span>
+                <p class="inline-code-small-comment">For dow Sunday is 0</p>
+                <code class="inline-code">{m} {h} {dom} {mon} {dow} {command}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Every minute of every day</span>
+                <code class="inline-code">* * * * * * {command}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Every 10 minutes of every day</span>
+                <code class="inline-code">*/10 * * * * * {command}</code>            
+            </div>
+            <div>
+                <span class="inline-code-comment">Special strings</span>
+                <p class="inline-code-small-comment">{special string} {command}</p>
+                <code class="inline-code">@reboot @yearly @monthly @weekly @daily @hourly</code>            
+            </div>
     </details>
     <details>
         <summary class="header">
