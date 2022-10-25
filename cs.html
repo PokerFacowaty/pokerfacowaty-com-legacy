@@ -84,22 +84,22 @@
                 <span class="command">PgUp/PgDwn</span>
                 <span class="same-line-comment">Scroll</span>
             </p>
-            <p class="command-line">
-                <span class="command">/server add -ssl -auto -network {network} {link} {port}</span>
-                <span class="same-line-comment">Auto connect</span>
-            </p>
-            <p class="command-line">
-                <span class="command">/network add -autosendcmd "/msg nickserv identify {password} ;wait 2000" {network}</span>
-                <span class="same-line-comment">Auto identify</span>
-            </p>
-            <p class="command-line">
-                <span class="command">/channel add -auto {channel} {network}</span>
-                <span class="same-line-comment">Auto join channels</span>
-            </p>
-            <p class="command-line">
-                <span class="command">/save</span>
-                <span class="same-line-comment">Save all settings</span>
-            </p>
+        <div>
+            <span class="inline-code-comment">Auto connect</span>
+            <code class="inline-code">server add -ssl -auto -network {network} {link} {port}</code>
+        </div>
+        <div>
+            <span class="inline-code-comment">Auto identify</span>
+            <code class="inline-code">/network add -autosendcmd "/msg nickserv identify {password} ;wait 2000" {network}</code>
+        </div>
+        <div>
+            <span class="inline-code-comment">Auto join channels</span>
+            <code class="inline-code">/channel add -auto {channel} {network}</code>
+        </div>
+        <div>
+            <span class="inline-code-comment">Save all settings</span>
+            <code class="inline-code">/save</code>
+        </div>
     </details>
     <details>
         <summary class="header">
