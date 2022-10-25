@@ -306,15 +306,38 @@
             <span class="icon">➤</span>
             git
         </summary>
-            <p class="command-line">
-                <span class="command">git add .</span>
-                <span class="same-line-comment">Add all files to the repo</span>
-                <p class="small-comment">Usually for when commit returns an error xd</p>
-            </p>
-            <p class="command-line">
-                <span class="command">git commit -m {message}</span>
-                <span class="same-line-comment"></span>
-            </p>
+            <div>
+                <span class="inline-code-comment">Add all files to the repo</span>
+                <p class="inline-code-small-comment">Usually for when commit returns an error xd</p>
+                <code class="inline-code">git add .</code>
+            </div>
+            <div>
+                <code class="inline-code">git commit -m {message}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Switch branch</span>
+                <code class="inline-code">git switch {new-branch}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment"><a class="source-link", href="https://stackoverflow.com/a/30359061" target="_blank">Create a new local branch</a></span>
+                <p class="inline-code-small-comment">Since git 2.23 (Q3 2019)</p>
+                <code class="inline-code">git switch -c {new-branch} {old-branch}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Merging branches</span>
+                <p class="inline-code-small-comment">While on branch A and willing to merge B INTO A</p>
+                <code class="inline-code">git merge {B}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Delete a branch locally</span>
+                <p class="inline-code-small-comment">Only if it's been pushed/merged, -D to force</p>
+                <code class="inline-code">git branch -d {branch}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Delete a branch remotely</span>
+                <p class="inline-code-small-comment">Small comment</p>
+                <code class="inline-code">git push origin --delete {branch}</code>
+            </div>
     </details>
     <details>
         <summary class="header">
