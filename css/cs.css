@@ -92,6 +92,31 @@ details[open] summary span.icon {
     background-color: black;
 }
 
+.inline-code {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    border: 2px solid white;
+    display: block;
+    padding: 10px;
+    color: white;
+    white-space: pre-wrap;
+}
+
+.inline-code-comment {
+    margin-top: 0px;
+    padding-left: 0px;
+    font-family: Noto Sans;
+    font-size: 25px;
+}
+
+.inline-code-small-comment {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Noto Sans;
+    font-size:18px;
+}
+
 .same-line-comment {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -122,4 +147,35 @@ table, td {
     color: white;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.wide-collapsible-box {
+    float:left;
+    margin-top: 15px;
+    width: 900px;
+    margin-left: 5px;
+}
+
+.full-width-code {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    border: 2px solid white;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.full-width-code-comment {
+    margin-top: 0px;
+    padding-left: 0px;
+    font-family: Noto Sans;
+    font-size: 25px;
+}
+
+.full-width-code-small-comment {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Noto Sans;
+    font-size:18px;
 }
