@@ -195,14 +195,6 @@
             tmux
         </summary>
             <p class="command-line">
-                <span class="command">tmux new -s {name}</span>
-                <span class="same-line-comment">New session</span>
-            </p>
-            <p class="command-line">
-                <span class="command">tmux kill-ses -t {name}</span>
-                <span class="same-line-comment">Kill session</span>
-            </p>
-            <p class="command-line">
                 <span class="command">Ctrl + B $</span>
                 <span class="same-line-comment">Rename current session</span>
             </p>
@@ -210,19 +202,26 @@
                 <span class="command">Ctrl + B D</span>
                 <span class="same-line-comment">Detach</span>
             </p>
-            </p>
-            <p class="command-line">
-                <span class="command">tmux ls</span>
-                <span class="same-line-comment">List sessions</span>
-            </p>
-            <p class="command-line">
-                <span class="command">tmux a</span>
-                <span class="same-line-comment">Attach to last session</span>
-            </p>
-            <p class="command-line">
-                <span class="command">tmux a -t {name}</span>
-                <span class="same-line-comment">Attach to {name}</span>
-            </p>             
+            <div>
+                <span class="inline-code-comment">New session</span>
+                <code class="inline-code">tmux new -s {name}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Kill session</span>
+                <code class="inline-code">tmux kill-ses -t {name}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">List sessions</span>
+                <code class="inline-code">tmux ls</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Attach to last session</span>
+                <code class="inline-code">tmux a</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Attach to {name}</span>
+                <code class="inline-code">tmux a -t {name}</code>
+            </div>
     </details>
     <details>
         <summary class="header">
