@@ -142,12 +142,12 @@
                 <code class="inline-code">-map {input number}:{v/a/s}:{stream number}</code>
             </div>
             <div>
-                <span class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/">Video to GIF (256 colors per frame)</a></span>
+                <span class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per frame)</a></span>
                 <p class="inline-code-small-comment">-1 for height in scale means "keep aspect ratio"</p>
                 <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1" {output}</code>
             </div>
             <div>
-                <span class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/">Video to GIF (256 colors per video)</a></span>
+                <span class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per video)</a></span>
                 <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse" {output}</code>
             </div>
     </details>
@@ -157,8 +157,8 @@
             Sheets
         </summary>
             <p class="command-line">
-                <span class="command"></span>
-                <span class="same-line-comment"></span>
+                <span class="inline-code-comment"><a class="source-link" href="https://infoinspired.com/wp-content/uploads/2018/06/Highlight-Rows-When-Ticked.jpg" target="_blank">Highlighting rows with checkboxes</a></span>
+                <code class="inline-code">=$A2:$A=TRUE</code>
             </p>
     </details>
     <details>
