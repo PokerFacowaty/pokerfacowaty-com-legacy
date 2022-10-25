@@ -167,9 +167,25 @@
             Docker
         </summary>
             <p class="command-line">
-                <span class="command"></span>
-                <span class="same-line-comment"></span>
+                <span class="command">Ctrl+P Ctrl+Q</span>
+                <span class="same-line-comment">Exiting a container's shell but keeping it running</span>
             </p>
+            <div>
+                <span class="inline-code-comment"><a class="source-link", href="https://stackoverflow.com/a/30133768" target="_blank">Listing containter volumes</a></span>
+                <code class="inline-code">docker inspect -f '{{ .Mounts }}' containerid</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Connecting a container to a network</span>
+                <code class="inline-code">docker network connect {network} {container-name}</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">Listing all containers and their IPs</span>
+                <code class="inline-code">docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';</code>
+            </div>
+            <div>
+                <span class="inline-code-comment">SSH into a container</span>
+                <code class="inline-code">docker run -it {container-name} /bin/bash</code>
+            </div>
     </details>
 </div>
 <div class="collapsible-box-right">
