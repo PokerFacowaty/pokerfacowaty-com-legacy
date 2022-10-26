@@ -11,62 +11,47 @@
     <a class="links" href="./" id="link-main">PokerFacowaty.com</a>
 </div>
 <h1>Cheat Sheet</h1>
-<div class="collapsible-box-left">
-    <!-- <details> -->
-    <!-- <summary class="header">
-            <span class="icon">➤</span>
-            Example tab
-        </summary>
-        <p class="command-line">
-            <span class="command">Command</span>
-            <span class="same-line-comment">Comment</span>
-            <p class="small-comment">Small comment</p>
-        </p> -->
-        <!-- <div>
-            <span class="inline-code-comment">Comment</span>
-            <p class="inline-code-small-comment">Small comment</p>
-            <code class="inline-code">Code</code>
-        </div> -->
-    <!-- </details> -->
+<div class="collapsible-box-half-left">
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             shell
         </summary>
-            <p class="command-line">
-                <span class="command">Ctrl + A</span>
-                <span class="same-line-comment">Line beginning</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + E</span>
-                <span class="same-line-comment">EOTL</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + L</span>
-                <span class="same-line-comment">Clear the screen</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + U</span>
-                <span class="same-line-comment">Clear the line before cursor</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + K</span>
-                <span class="same-line-comment">Clear the line after cursor</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + R</span>
-                <span class="same-line-comment">Search last commands</span>
-            <p class="command-line">
-                <span class="command">Alt + F</span>
-                <span class="same-line-comment">Cursor one word forward</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Alt + B</span>
-                <span class="same-line-comment">Cursor one word backward</span>
-            </p>
-            <div>
-            <span class="inline-code-comment">Create an alias</span>
-            <p class="inline-code-small-comment">Save to .bashrc / .zshrc to make permanent</p>
+        <div class="entry">
+            <span class="command">Ctrl + A</span>
+            <span class="same-line-comment">Line beginning</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + E</span>
+            <span class="same-line-comment">EOTL</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + L</span>
+            <span class="same-line-comment">Clear the screen</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + U</span>
+            <span class="same-line-comment">Clear the line before cursor</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + K</span>
+            <span class="same-line-comment">Clear the line after cursor</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + R</span>
+            <span class="same-line-comment">Search last commands</span>
+        </div>
+        <div class="entry">
+            <span class="command">Alt + F</span>
+            <span class="same-line-comment">Cursor one word forward</span>
+        </div>
+        <div class="entry">
+            <span class="command">Alt + B</span>
+            <span class="same-line-comment">Cursor one word backward</span>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Create an alias</div>
+            <div class="inline-code-small-comment">Save to .bashrc / .zshrc to make permanent</div>
             <code class="inline-code">alias {short}="{full}"</code>
         </div>
     </details>
@@ -75,29 +60,29 @@
             <span class="icon">➤</span>
             irssi
         </summary>
-            <p class="command-line">
-                <span class="command">Alt + N</span>
-                <span class="same-line-comment">Switch window to N</span>
-            </p>
-            <p class="small-comment">Works until Alt + O</p>
-            <p class="command-line">
-                <span class="command">PgUp/PgDwn</span>
-                <span class="same-line-comment">Scroll</span>
-            </p>
-        <div>
-            <span class="inline-code-comment">Auto connect</span>
+        <div class="entry">
+            <span class="command">Alt + N</span>
+            <span class="same-line-comment">Switch window to N</span>
+            <div class="small-comment">Works until Alt + O</div>
+        </div>
+        <div class="entry">
+            <span class="command">PgUp/PgDwn</span>
+            <span class="same-line-comment">Scroll</span>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Auto connect</div>
             <code class="inline-code">server add -ssl -auto -network {network} {link} {port}</code>
         </div>
-        <div>
-            <span class="inline-code-comment">Auto identify</span>
+        <div class="entry">
+            <div class="inline-code-comment">Auto identify</div>
             <code class="inline-code">/network add -autosendcmd "/msg nickserv identify {password} ;wait 2000" {network}</code>
         </div>
-        <div>
-            <span class="inline-code-comment">Auto join channels</span>
+        <div class="entry">
+            <div class="inline-code-comment">Auto join channels</div>
             <code class="inline-code">/channel add -auto {channel} {network}</code>
         </div>
-        <div>
-            <span class="inline-code-comment">Save all settings</span>
+        <div class="entry">
+            <div class="inline-code-comment">Save all settings</div>
             <code class="inline-code">/save</code>
         </div>
     </details>
@@ -106,278 +91,277 @@
             <span class="icon">➤</span>
             grep
         </summary>
-            <p class="command-line">
-                <span class="command">-i</span>
-                <span class="same-line-comment">Ignore case</span>
-            </p>
-            <p class="command-line">
-                <span class="command">-r</span>
-                <span class="same-line-comment">Dir and all subdirs</span>
-            </p>
-            <p class="command-line">
-                <span class="command">|</span>
-                <span class="same-line-comment">OR operator</span>
-            </p>
-            <div>
-            <span class="inline-code-comment">Searching for the string in the file</span>
-            <code class="inline-code">grep {options} {string} {path}</code>
-            </div>
+        <div class="entry">
+            <span class="command">-i</span>
+            <span class="same-line-comment">Ignore case</span>
+        </div>
+        <div class="entry">
+            <span class="command">-r</span>
+            <span class="same-line-comment">Dir and all subdirs</span>
+        </div>
+        <div class="entry">
+            <span class="command">|</span>
+            <span class="same-line-comment">OR operator</span>
+        </div>
+        <div class="entry">
+        <div class="inline-code-comment">Searching for the string in the file</div>
+        <code class="inline-code">grep {options} {string} {path}</code>
+        </div>
     </details>
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             ffmpeg
         </summary>
-            <div>
-                <span class="inline-code-comment">Hi8 for DaVinci</span>
-                <p class="inline-code-small-comment">H.264 at 1920x1440 capped at 10 Mb/s</p>
-                <code class="inline-code">ffmpeg -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 18 -c:a aac -b 320k {output}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Hi8 skipping DaVinci</span>
-                <code class="inline-code">ffmpeg -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 22 -s 1920x1440 -c:a aac -b 320k {output}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Mapping</span>
-                <code class="inline-code">-map {input number}:{v/a/s}:{stream number}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per frame)</a></span>
-                <p class="inline-code-small-comment">-1 for height in scale means "keep aspect ratio"</p>
-                <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1" {output}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per video)</a></span>
-                <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse" {output}</code>
-            </div>
-            <div>
-            <span class="inline-code-comment">Changing FPS (same duration)</span>
-            <code class="inline-code">ffmpeg -i {input} -filter:v fps={fps} {output}</code>
-            </div>
+        <div class="entry">
+            <div class="inline-code-comment">Hi8 for DaVinci</div>
+            <div class="inline-code-small-comment">H.264 at 1920x1440 capped at 10 Mb/s</div>
+            <code class="inline-code">ffmpeg -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 18 -c:a aac -b 320k {output}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Hi8 skipping DaVinci</div>
+            <code class="inline-code">ffmpeg -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 22 -s 1920x1440 -c:a aac -b 320k {output}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Mapping</div>
+            <code class="inline-code">-map {input number}:{v/a/s}:{stream number}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per frame)</a></div>
+            <div class="inline-code-small-comment">-1 for height in scale means "keep aspect ratio"</div>
+            <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1" {output}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per video)</a></div>
+            <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse" {output}</code>
+        </div>
+        <div class="entry">
+        <div class="inline-code-comment">Changing FPS (same duration)</div>
+        <code class="inline-code">ffmpeg -i {input} -filter:v fps={fps} {output}</code>
+        </div>
     </details>
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             Sheets
         </summary>
-            <p class="command-line">
-                <span class="inline-code-comment"><a class="source-link" href="https://infoinspired.com/wp-content/uploads/2018/06/Highlight-Rows-When-Ticked.jpg" target="_blank">Highlighting rows with checkboxes</a></span>
-                <code class="inline-code">=$A2:$A=TRUE</code>
-            </p>
+        <div class="entry">
+            <div class="inline-code-comment"><a class="source-link" href="https://infoinspired.com/wp-content/uploads/2018/06/Highlight-Rows-When-Ticked.jpg" target="_blank">Highlighting rows with checkboxes</a></div>
+            <code class="inline-code">=$A2:$A=TRUE</code>
+        </div>
     </details>
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             Docker
         </summary>
-            <p class="command-line">
-                <span class="command">Ctrl+P Ctrl+Q</span>
-                <span class="same-line-comment">Exiting a container's shell but keeping it running</span>
-            </p>
-            <div>
-                <span class="inline-code-comment"><a class="source-link", href="https://stackoverflow.com/a/30133768" target="_blank">Listing containter volumes</a></span>
-                <code class="inline-code">docker inspect -f '{{ .Mounts }}' containerid</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Connecting a container to a network</span>
-                <code class="inline-code">docker network connect {network} {container-name}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Listing all containers and their IPs</span>
-                <code class="inline-code">docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">SSH into a container</span>
-                <code class="inline-code">docker run -it {container-name} /bin/bash</code>
-            </div>
+        <div class="entry">
+            <span class="command">Ctrl+P Ctrl+Q</span>
+            <span class="same-line-comment">Exiting a container's shell but keeping it running</span>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment"><a class="source-link", href="https://stackoverflow.com/a/30133768" target="_blank">Listing containter volumes</a></div>
+            <code class="inline-code">docker inspect -f '{{ .Mounts }}' containerid</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Connecting a container to a network</div>
+            <code class="inline-code">docker network connect {network} {container-name}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Listing all containers and their IPs</div>
+            <code class="inline-code">docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">SSH into a container</div>
+            <code class="inline-code">docker run -it {container-name} /bin/bash</code>
+        </div>
     </details>
 </div>
-<div class="collapsible-box-right">
+<div class="collapsible-box-half-right">
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             tmux
         </summary>
-            <p class="command-line">
-                <span class="command">Ctrl + B $</span>
-                <span class="same-line-comment">Rename current session</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + B D</span>
-                <span class="same-line-comment">Detach</span>
-            </p>
-            <div>
-                <span class="inline-code-comment">New session</span>
-                <code class="inline-code">tmux new -s {name}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Kill session</span>
-                <code class="inline-code">tmux kill-ses -t {name}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">List sessions</span>
-                <code class="inline-code">tmux ls</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Attach to last session</span>
-                <code class="inline-code">tmux a</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Attach to {name}</span>
-                <code class="inline-code">tmux a -t {name}</code>
-            </div>
+        <div class="entry">
+            <span class="command">Ctrl + B $</span>
+            <span class="same-line-comment">Rename current session</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + B D</span>
+            <span class="same-line-comment">Detach</span>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">New session</div>
+            <code class="inline-code">tmux new -s {name}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Kill session</div>
+            <code class="inline-code">tmux kill-ses -t {name}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">List sessions</div>
+            <code class="inline-code">tmux ls</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Attach to last session</div>
+            <code class="inline-code">tmux a</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Attach to {name}</div>
+            <code class="inline-code">tmux a -t {name}</code>
+        </div>
     </details>
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             nano
         </summary>
-        <p id="small-comment-on-top">Set "Use Option as Meta key" on Mac</p>
-            <p class="command-line">
-                <span class="command">Ctrl + S</span>
-                <span class="same-line-comment">Save</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + O</span>
-                <span class="same-line-comment">Save as</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + X</span>
-                <span class="same-line-comment">Close</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Alt + A</span>
-                <span class="same-line-comment">Turn the mark on/off</span>
-            </p>
-            
-            <p class="small-comment">Prompts about saving as well</p>
-            <p class="command-line">
-                <span class="command">Alt + 6</span>
-                <span class="same-line-comment">Copy current line / mark</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + K</span>
-                <span class="same-line-comment">Cut current line / mark</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + U</span>
-                <span class="same-line-comment">Paste buffer content</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Alt + U</span>
-                <span class="same-line-comment">Undo</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Alt + E</span>
-                <span class="same-line-comment">Redo</span>
-            </p>
+        <div class="tab-comment">Set "Use Option as Meta key" on Mac</div>
+        <div class="entry">
+            <span class="command">Ctrl + S</span>
+            <span class="same-line-comment">Save</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + O</span>
+            <span class="same-line-comment">Save as</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + X</span>
+            <span class="same-line-comment">Close</span>
+        </div>
+        <div class="entry">
+            <span class="command">Alt + A</span>
+            <span class="same-line-comment">Turn the mark on/off</span>
+            <div class="small-comment">Prompts about saving as well</div>
+        </div>
+        <div class="entry">
+            <span class="command">Alt + 6</span>
+            <span class="same-line-comment">Copy current line / mark</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + K</span>
+            <span class="same-line-comment">Cut current line / mark</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + U</span>
+            <span class="same-line-comment">Paste buffer content</span>
+        </div>
+        <div class="entry">
+            <span class="command">Alt + U</span>
+            <span class="same-line-comment">Undo</span>
+        </div>
+        <div class="entry">
+            <span class="command">Alt + E</span>
+            <span class="same-line-comment">Redo</span>
+        </div>
     </details>
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             cron
         </summary>
-            <div>
-                <span class="inline-code-comment">Display the crontab file</span>
-                <code class="inline-code">crontab -l</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Edit the crontab file</span>
-                <p class="inline-code-small-comment">With vi, hell yeah</p>
-                <code class="inline-code">crontab -e</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Syntax</span>
-                <p class="inline-code-small-comment">For dow Sunday is 0</p>
-                <code class="inline-code">{m} {h} {dom} {mon} {dow} {command}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Every minute of every day</span>
-                <code class="inline-code">* * * * * * {command}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Every 10 minutes of every day</span>
-                <code class="inline-code">*/10 * * * * * {command}</code>            
-            </div>
-            <div>
-                <span class="inline-code-comment">Special strings</span>
-                <p class="inline-code-small-comment">{special string} {command}</p>
-                <code class="inline-code">@reboot @yearly @monthly @weekly @daily @hourly</code>            
-            </div>
+        <div class="entry">
+            <div class="inline-code-comment">Display the crontab file</div>
+            <code class="inline-code">crontab -l</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Edit the crontab file</div>
+            <div class="inline-code-small-comment">With vi, hell yeah</div>
+            <code class="inline-code">crontab -e</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Syntax</div>
+            <div class="inline-code-small-comment">For dow Sunday is 0</div>
+            <code class="inline-code">{m} {h} {dom} {mon} {dow} {command}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Every minute of every day</div>
+            <code class="inline-code">* * * * * * {command}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Every 10 minutes of every day</div>
+            <code class="inline-code">*/10 * * * * * {command}</code>            
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Special strings</div>
+            <div class="inline-code-small-comment">{special string} {command}</div>
+            <code class="inline-code">@reboot @yearly @monthly @weekly @daily @hourly</code>            
+        </div>
     </details>
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             git
         </summary>
-            <div>
-                <span class="inline-code-comment">Add all files to the repo</span>
-                <p class="inline-code-small-comment">Usually for when commit returns an error xd</p>
-                <code class="inline-code">git add .</code>
-            </div>
-            <div>
-                <code class="inline-code">git commit -m {message}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Switch branch</span>
-                <code class="inline-code">git switch {new-branch}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment"><a class="source-link", href="https://stackoverflow.com/a/30359061" target="_blank">Create a new local branch</a></span>
-                <p class="inline-code-small-comment">Since git 2.23 (Q3 2019)</p>
-                <code class="inline-code">git switch -c {new-branch} {old-branch}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Merging branches</span>
-                <p class="inline-code-small-comment">While on branch A and willing to merge B INTO A</p>
-                <code class="inline-code">git merge {B}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Delete a branch locally</span>
-                <p class="inline-code-small-comment">Only if it's been pushed/merged, -D to force</p>
-                <code class="inline-code">git branch -d {branch}</code>
-            </div>
-            <div>
-                <span class="inline-code-comment">Delete a branch remotely</span>
-                <p class="inline-code-small-comment">Small comment</p>
-                <code class="inline-code">git push origin --delete {branch}</code>
-            </div>
+        <div class="entry">
+            <div class="inline-code-comment">Add all files to the repo</div>
+            <div class="inline-code-small-comment">Usually for when commit returns an error xd</div>
+            <code class="inline-code">git add .</code>
+        </div>
+        <div class="entry">
+            <code class="inline-code">git commit -m {message}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Switch branch</div>
+            <code class="inline-code">git switch {new-branch}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment"><a class="source-link", href="https://stackoverflow.com/a/30359061" target="_blank">Create a new local branch</a></div>
+            <div class="inline-code-small-comment">Since git 2.23 (Q3 2019)</div>
+            <code class="inline-code">git switch -c {new-branch} {old-branch}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Merging branches</div>
+            <div class="inline-code-small-comment">While on branch A and willing to merge B INTO A</div>
+            <code class="inline-code">git merge {B}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Delete a branch locally</div>
+            <div class="inline-code-small-comment">Only if it's been pushed/merged, -D to force</div>
+            <code class="inline-code">git branch -d {branch}</code>
+        </div>
+        <div class="entry">
+            <div class="inline-code-comment">Delete a branch remotely</div>
+            <code class="inline-code">git push origin --delete {branch}</code>
+        </div>
     </details>
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             VSCode
         </summary>
-            <p class="command-line">
-                <span class="command">Ctrl/Cmd + Shift + L</span>
-                <span class="same-line-comment">Add cursor to all matching selections</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl/Cmd + K + W</span>
-                <span class="same-line-comment">Close all editor tabs</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl/Cmd + /</span>
-                <span class="same-line-comment">Single line comment</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Shift + Alt / Option + A</span>
-                <span class="same-line-comment">Multi line comment</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl + `</span>
-                <span class="same-line-comment">Open terminal</span>
-            </p>
-            <p class="command-line">
-                <span class="command">Ctrl/Cmd + \</span>
-                <span class="same-line-comment">Split editor view</span>
-            </p>
+        <div class="entry">
+            <span class="command">Ctrl/Cmd + Shift + L</span>
+            <span class="same-line-comment">Add cursor to all matching selections</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl/Cmd + K + W</span>
+            <span class="same-line-comment">Close all editor tabs</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl/Cmd + /</span>
+            <span class="same-line-comment">Single line comment</span>
+        </div>
+        <div class="entry">
+            <span class="command">Shift + Alt / Option + A</span>
+            <span class="same-line-comment">Multi line comment</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl + `</span>
+            <span class="same-line-comment">Open terminal</span>
+        </div>
+        <div class="entry">
+            <span class="command">Ctrl/Cmd + \</span>
+            <span class="same-line-comment">Split editor view</span>
+        </div>
     </details>
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             Markdown
         </summary>
+            <!-- This probably needs fixing -->
             <table>
                 <tr>
                     <td>Heading</td>
@@ -457,18 +441,14 @@
             </table>
     </details>
 </div>
-<div class="wide-collapsible-box">
+<div class="collapsible-box-full">
     <details>
         <summary class="header">
             <span class="icon">➤</span>
             Python
         </summary>
         <div>
-            <!-- <span class="full-width-code-comment">Comment</span> -->
-            <!-- <p class="full-width-code-small-comment">Smallcomment</p> -->
-            <!-- <code class="full-width-code"><pre>Code</pre></code> -->
-            <span class="full-width-code-comment">break vs continue</span>
-            <p class="full-width-code-small-comment"></p>
+            <div class="full-width-code-comment">break vs continue</div>
             <code class="full-width-code"><pre>
 for x in "abcd":
     if x == "c":
@@ -478,7 +458,7 @@ for x in "abcd":
 for x in "abcd":
     if x == "c":
         continue
-print(x)  # a, b, d</pre>
+    print(x)  # a, b, d</pre>
             </code>
         </div>
     </details>
