@@ -79,18 +79,22 @@ details[open] summary span.icon {
     transform: rotate(90deg);
 }
 
-.list {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: Noto Sans;
-    font-size: 18px;
-}
-
 .tab-comment {
-    margin-top: 0px; /* Different than in cs.css*/
+    margin-top: -10px; /* Different than in cs.css*/
     margin-bottom: 3px;
     font-family: Noto Sans;
     font-size: 16px;
+}
+
+.entry {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.list {
+    margin-top: 0px;
+    font-family: Noto Sans;
+    font-size: 18px;
 }
 
 .sublist {
