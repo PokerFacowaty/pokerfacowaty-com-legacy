@@ -127,12 +127,12 @@
             <code class="inline-code">-map {input number}:{v/a/s}:{stream number}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per frame)</a></div>
+            <div class="inline-code-comment"><a class="links" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per frame)</a></div>
             <div class="inline-code-small-comment">-1 for height in scale means "keep aspect ratio"</div>
             <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1" {output}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment"><a class="source-link" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per video)</a></div>
+            <div class="inline-code-comment"><a class="links" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per video)</a></div>
             <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse" {output}</code>
         </div>
         <div class="entry">
@@ -146,7 +146,7 @@
             Sheets
         </summary>
         <div class="entry">
-            <div class="inline-code-comment"><a class="source-link" href="https://infoinspired.com/wp-content/uploads/2018/06/Highlight-Rows-When-Ticked.jpg" target="_blank">Highlighting rows with checkboxes</a></div>
+            <div class="inline-code-comment"><a class="links" href="https://infoinspired.com/wp-content/uploads/2018/06/Highlight-Rows-When-Ticked.jpg" target="_blank">Highlighting rows with checkboxes</a></div>
             <code class="inline-code">=$A2:$A=TRUE</code>
         </div>
     </details>
@@ -160,7 +160,7 @@
             <span class="same-line-comment">Exiting a container's shell but keeping it running</span>
         </div>
         <div class="entry">
-            <div class="inline-code-comment"><a class="source-link", href="https://stackoverflow.com/a/30133768" target="_blank">Listing containter volumes</a></div>
+            <div class="inline-code-comment"><a class="links", href="https://stackoverflow.com/a/30133768" target="_blank">Listing containter volumes</a></div>
             <code class="inline-code">docker inspect -f '{{ .Mounts }}' containerid</code>
         </div>
         <div class="entry">
@@ -307,7 +307,7 @@
             <code class="inline-code">git switch {new-branch}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment"><a class="source-link", href="https://stackoverflow.com/a/30359061" target="_blank">Create a new local branch</a></div>
+            <div class="inline-code-comment"><a class="links", href="https://stackoverflow.com/a/30359061" target="_blank">Create a new local branch</a></div>
             <div class="inline-code-small-comment">Since git 2.23 (Q3 2019)</div>
             <code class="inline-code">git switch -c {new-branch} {old-branch}</code>
         </div>

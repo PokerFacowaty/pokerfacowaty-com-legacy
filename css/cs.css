@@ -142,16 +142,6 @@ details[open] summary span.icon {
     font-size:18px;
 }
 
-/* Overrides span that the link is in */
-a.source-link:link, a.source-link:visited {
-    color: black;
-    text-decoration: none;
-}
-
-a.source-link:hover {
-    color: blue;
-}
-
 table, td {
     border: 2px solid white;
     border-collapse: collapse;
