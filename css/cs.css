@@ -109,7 +109,7 @@ details[open] summary span.icon {
     font-size: 18px;
 }
 
-.inline-code {
+.line-code {
     margin-top: 0px;
     margin-bottom: 5px;
     background-color: #000000;
@@ -120,7 +120,7 @@ details[open] summary span.icon {
     white-space: pre-wrap;
 }
 
-.inline-code-comment {
+.line-code-comment {
     margin-top: 0px;
     margin-bottom: 2px;
     padding-left: 0px;
@@ -128,7 +128,7 @@ details[open] summary span.icon {
     font-size: 25px;
 }
 
-.inline-code-small-comment {
+.line-code-small-comment {
     margin-top: -7px;
     margin-bottom: 0px;
     font-family: Noto Sans;

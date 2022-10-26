@@ -50,9 +50,9 @@
             <span class="same-line-comment">Cursor one word backward</span>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Create an alias</div>
-            <div class="inline-code-small-comment">Save to .bashrc / .zshrc to make permanent</div>
-            <code class="inline-code">alias {short}="{full}"</code>
+            <div class="line-code-comment">Create an alias</div>
+            <div class="line-code-small-comment">Save to .bashrc / .zshrc to make permanent</div>
+            <code class="line-code">alias {short}="{full}"</code>
         </div>
     </details>
     <details>
@@ -70,20 +70,20 @@
             <span class="same-line-comment">Scroll</span>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Auto connect</div>
-            <code class="inline-code">server add -ssl -auto -network {network} {link} {port}</code>
+            <div class="line-code-comment">Auto connect</div>
+            <code class="line-code">server add -ssl -auto -network {network} {link} {port}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Auto identify</div>
-            <code class="inline-code">/network add -autosendcmd "/msg nickserv identify {password} ;wait 2000" {network}</code>
+            <div class="line-code-comment">Auto identify</div>
+            <code class="line-code">/network add -autosendcmd "/msg nickserv identify {password} ;wait 2000" {network}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Auto join channels</div>
-            <code class="inline-code">/channel add -auto {channel} {network}</code>
+            <div class="line-code-comment">Auto join channels</div>
+            <code class="line-code">/channel add -auto {channel} {network}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Save all settings</div>
-            <code class="inline-code">/save</code>
+            <div class="line-code-comment">Save all settings</div>
+            <code class="line-code">/save</code>
         </div>
     </details>
     <details>
@@ -104,8 +104,8 @@
             <span class="same-line-comment">OR operator</span>
         </div>
         <div class="entry">
-        <div class="inline-code-comment">Searching for the string in the file</div>
-        <code class="inline-code">grep {options} {string} {path}</code>
+        <div class="line-code-comment">Searching for the string in the file</div>
+        <code class="line-code">grep {options} {string} {path}</code>
         </div>
     </details>
     <details>
@@ -114,30 +114,30 @@
             ffmpeg
         </summary>
         <div class="entry">
-            <div class="inline-code-comment">Hi8 for DaVinci</div>
-            <div class="inline-code-small-comment">H.264 at 1920x1440 capped at 10 Mb/s</div>
-            <code class="inline-code">ffmpeg -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 18 -c:a aac -b 320k {output}</code>
+            <div class="line-code-comment">Hi8 for DaVinci</div>
+            <div class="line-code-small-comment">H.264 at 1920x1440 capped at 10 Mb/s</div>
+            <code class="line-code">ffmpeg -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 18 -c:a aac -b 320k {output}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Hi8 skipping DaVinci</div>
-            <code class="inline-code">ffmpeg -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 22 -s 1920x1440 -c:a aac -b 320k {output}</code>
+            <div class="line-code-comment">Hi8 skipping DaVinci</div>
+            <code class="line-code">ffmpeg -i {input} -filter:v yadif=0:1:0 -c:v libx264 -crf 22 -s 1920x1440 -c:a aac -b 320k {output}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Mapping</div>
-            <code class="inline-code">-map {input number}:{v/a/s}:{stream number}</code>
+            <div class="line-code-comment">Mapping</div>
+            <code class="line-code">-map {input number}:{v/a/s}:{stream number}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment"><a class="links" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per frame)</a></div>
-            <div class="inline-code-small-comment">-1 for height in scale means "keep aspect ratio"</div>
-            <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1" {output}</code>
+            <div class="line-code-comment"><a class="links" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per frame)</a></div>
+            <div class="line-code-small-comment">-1 for height in scale means "keep aspect ratio"</div>
+            <code class="line-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen=stats_mode=single [p];[b][p] paletteuse=new=1" {output}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment"><a class="links" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per video)</a></div>
-            <code class="inline-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse" {output}</code>
+            <div class="line-code-comment"><a class="links" href="https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/" target="_blank">Video to GIF (256 colors per video)</a></div>
+            <code class="line-code">ffmpeg -i {input} -filter_complex "[0:v] fps={fps},scale={width}:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse" {output}</code>
         </div>
         <div class="entry">
-        <div class="inline-code-comment">Changing FPS (same duration)</div>
-        <code class="inline-code">ffmpeg -i {input} -filter:v fps={fps} {output}</code>
+        <div class="line-code-comment">Changing FPS (same duration)</div>
+        <code class="line-code">ffmpeg -i {input} -filter:v fps={fps} {output}</code>
         </div>
     </details>
     <details>
@@ -146,8 +146,8 @@
             Sheets
         </summary>
         <div class="entry">
-            <div class="inline-code-comment"><a class="links" href="https://infoinspired.com/wp-content/uploads/2018/06/Highlight-Rows-When-Ticked.jpg" target="_blank">Highlighting rows with checkboxes</a></div>
-            <code class="inline-code">=$A2:$A=TRUE</code>
+            <div class="line-code-comment"><a class="links" href="https://infoinspired.com/wp-content/uploads/2018/06/Highlight-Rows-When-Ticked.jpg" target="_blank">Highlighting rows with checkboxes</a></div>
+            <code class="line-code">=$A2:$A=TRUE</code>
         </div>
     </details>
     <details>
@@ -160,20 +160,20 @@
             <span class="same-line-comment">Exiting a container's shell but keeping it running</span>
         </div>
         <div class="entry">
-            <div class="inline-code-comment"><a class="links", href="https://stackoverflow.com/a/30133768" target="_blank">Listing containter volumes</a></div>
-            <code class="inline-code">docker inspect -f '{{ .Mounts }}' containerid</code>
+            <div class="line-code-comment"><a class="links", href="https://stackoverflow.com/a/30133768" target="_blank">Listing containter volumes</a></div>
+            <code class="line-code">docker inspect -f '{{ .Mounts }}' containerid</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Connecting a container to a network</div>
-            <code class="inline-code">docker network connect {network} {container-name}</code>
+            <div class="line-code-comment">Connecting a container to a network</div>
+            <code class="line-code">docker network connect {network} {container-name}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Listing all containers and their IPs</div>
-            <code class="inline-code">docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';</code>
+            <div class="line-code-comment">Listing all containers and their IPs</div>
+            <code class="line-code">docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">SSH into a container</div>
-            <code class="inline-code">docker run -it {container-name} /bin/bash</code>
+            <div class="line-code-comment">SSH into a container</div>
+            <code class="line-code">docker run -it {container-name} /bin/bash</code>
         </div>
     </details>
 </div>
@@ -192,24 +192,24 @@
             <span class="same-line-comment">Detach</span>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">New session</div>
-            <code class="inline-code">tmux new -s {name}</code>
+            <div class="line-code-comment">New session</div>
+            <code class="line-code">tmux new -s {name}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Kill session</div>
-            <code class="inline-code">tmux kill-ses -t {name}</code>
+            <div class="line-code-comment">Kill session</div>
+            <code class="line-code">tmux kill-ses -t {name}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">List sessions</div>
-            <code class="inline-code">tmux ls</code>
+            <div class="line-code-comment">List sessions</div>
+            <code class="line-code">tmux ls</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Attach to last session</div>
-            <code class="inline-code">tmux a</code>
+            <div class="line-code-comment">Attach to last session</div>
+            <code class="line-code">tmux a</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Attach to {name}</div>
-            <code class="inline-code">tmux a -t {name}</code>
+            <div class="line-code-comment">Attach to {name}</div>
+            <code class="line-code">tmux a -t {name}</code>
         </div>
     </details>
     <details>
@@ -262,31 +262,31 @@
             cron
         </summary>
         <div class="entry">
-            <div class="inline-code-comment">Display the crontab file</div>
-            <code class="inline-code">crontab -l</code>
+            <div class="line-code-comment">Display the crontab file</div>
+            <code class="line-code">crontab -l</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Edit the crontab file</div>
-            <div class="inline-code-small-comment">With vi, hell yeah</div>
-            <code class="inline-code">crontab -e</code>
+            <div class="line-code-comment">Edit the crontab file</div>
+            <div class="line-code-small-comment">With vi, hell yeah</div>
+            <code class="line-code">crontab -e</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Syntax</div>
-            <div class="inline-code-small-comment">For dow Sunday is 0</div>
-            <code class="inline-code">{m} {h} {dom} {mon} {dow} {command}</code>
+            <div class="line-code-comment">Syntax</div>
+            <div class="line-code-small-comment">For dow Sunday is 0</div>
+            <code class="line-code">{m} {h} {dom} {mon} {dow} {command}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Every minute of every day</div>
-            <code class="inline-code">* * * * * * {command}</code>
+            <div class="line-code-comment">Every minute of every day</div>
+            <code class="line-code">* * * * * * {command}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Every 10 minutes of every day</div>
-            <code class="inline-code">*/10 * * * * * {command}</code>            
+            <div class="line-code-comment">Every 10 minutes of every day</div>
+            <code class="line-code">*/10 * * * * * {command}</code>            
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Special strings</div>
-            <div class="inline-code-small-comment">{special string} {command}</div>
-            <code class="inline-code">@reboot @yearly @monthly @weekly @daily @hourly</code>            
+            <div class="line-code-comment">Special strings</div>
+            <div class="line-code-small-comment">{special string} {command}</div>
+            <code class="line-code">@reboot @yearly @monthly @weekly @daily @hourly</code>            
         </div>
     </details>
     <details>
@@ -295,35 +295,35 @@
             git
         </summary>
         <div class="entry">
-            <div class="inline-code-comment">Add all files to the repo</div>
-            <div class="inline-code-small-comment">Usually for when commit returns an error xd</div>
-            <code class="inline-code">git add .</code>
+            <div class="line-code-comment">Add all files to the repo</div>
+            <div class="line-code-small-comment">Usually for when commit returns an error xd</div>
+            <code class="line-code">git add .</code>
         </div>
         <div class="entry">
-            <code class="inline-code">git commit -m {message}</code>
+            <code class="line-code">git commit -m {message}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Switch branch</div>
-            <code class="inline-code">git switch {new-branch}</code>
+            <div class="line-code-comment">Switch branch</div>
+            <code class="line-code">git switch {new-branch}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment"><a class="links", href="https://stackoverflow.com/a/30359061" target="_blank">Create a new local branch</a></div>
-            <div class="inline-code-small-comment">Since git 2.23 (Q3 2019)</div>
-            <code class="inline-code">git switch -c {new-branch} {old-branch}</code>
+            <div class="line-code-comment"><a class="links", href="https://stackoverflow.com/a/30359061" target="_blank">Create a new local branch</a></div>
+            <div class="line-code-small-comment">Since git 2.23 (Q3 2019)</div>
+            <code class="line-code">git switch -c {new-branch} {old-branch}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Merging branches</div>
-            <div class="inline-code-small-comment">While on branch A and willing to merge B INTO A</div>
-            <code class="inline-code">git merge {B}</code>
+            <div class="line-code-comment">Merging branches</div>
+            <div class="line-code-small-comment">While on branch A and willing to merge B INTO A</div>
+            <code class="line-code">git merge {B}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Delete a branch locally</div>
-            <div class="inline-code-small-comment">Only if it's been pushed/merged, -D to force</div>
-            <code class="inline-code">git branch -d {branch}</code>
+            <div class="line-code-comment">Delete a branch locally</div>
+            <div class="line-code-small-comment">Only if it's been pushed/merged, -D to force</div>
+            <code class="line-code">git branch -d {branch}</code>
         </div>
         <div class="entry">
-            <div class="inline-code-comment">Delete a branch remotely</div>
-            <code class="inline-code">git push origin --delete {branch}</code>
+            <div class="line-code-comment">Delete a branch remotely</div>
+            <code class="line-code">git push origin --delete {branch}</code>
         </div>
     </details>
     <details>
