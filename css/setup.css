@@ -84,7 +84,7 @@ details[open] summary span.icon {
 }
 
 .tab-comment {
-    margin-top: -10px; /* Different than in cs.css*/
+    margin-top: -5px; /* Different than in cs.css*/
     margin-bottom: 3px;
     font-family: Noto Sans;
     font-size: 16px;
@@ -99,8 +99,4 @@ details[open] summary span.icon {
     margin-top: 0px;
     font-family: Noto Sans;
     font-size: 18px;
-}
-
-.sublist {
-    margin-left: 20px;
 }
