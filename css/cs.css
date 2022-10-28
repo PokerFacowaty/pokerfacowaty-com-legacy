@@ -146,6 +146,12 @@ details[open] summary span.icon {
     font-size:18px;
 }
 
+.list {
+    margin-top: 0px;
+    font-family: Noto Sans;
+    font-size: 18px;
+}
+
 table, td {
     border: 2px solid white;
     border-collapse: collapse;
