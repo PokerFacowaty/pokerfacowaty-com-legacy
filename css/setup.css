@@ -79,6 +79,10 @@ details[open] summary span.icon {
     transform: rotate(90deg);
 }
 
+.half-tab-image, .full-tab-image {
+    max-width: 100%;
+}
+
 .tab-comment {
     margin-top: -10px; /* Different than in cs.css*/
     margin-bottom: 3px;
